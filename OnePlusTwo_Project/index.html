@@ -127,40 +127,54 @@
 		*					*
 		*********************/
 
+		function checkZero() {
+			if(mainInputField.value === "0") return true;
+			else return false;
+		}
+
 		oneBtn.onclick = function() {
-			mainInputField.value += "1";
+			if(checkZero()) mainInputField.value = "1";
+			else mainInputField.value += "1";
 		}
 
 		twoBtn.onclick = function() {
-			mainInputField.value += "2";
+			if(checkZero()) mainInputField.value = "2";
+			else mainInputField.value += "2";
 		}
 
 		threeBtn.onclick = function() {
-			mainInputField.value += "3";
+			if(checkZero()) mainInputField.value = "3";
+			else mainInputField.value += "3";
 		}
 
 		fourBtn.onclick = function() {
-			mainInputField.value += "4";
+			if(checkZero()) mainInputField.value = "4";
+			else mainInputField.value += "4";
 		}
 
 		fiveBtn.onclick = function() {
-			mainInputField.value += "5";
+			if(checkZero()) mainInputField.value = "5";
+			else mainInputField.value += "5";
 		}
 
 		sixBtn.onclick = function() {
-			mainInputField.value += "6";
+			if(checkZero()) mainInputField.value = "6";
+			else mainInputField.value += "6";
 		}
 
 		sevenBtn.onclick = function() {
-			mainInputField.value += "7";
+			if(checkZero()) mainInputField.value = "7";
+			else mainInputField.value += "7";
 		}
 
 		eightBtn.onclick = function() {
-			mainInputField.value += "8";
+			if(checkZero()) mainInputField.value = "8";
+			else mainInputField.value += "8";
 		}
 
 		nineBtn.onclick = function() {
-			mainInputField.value += "9";
+			if(checkZero()) mainInputField.value = "9";
+			else mainInputField.value += "9";
 		}
 
 		zeroBtn.onclick = function() {
@@ -204,6 +218,9 @@
         }
 
         equalBtn.onclick = function() {
+        	if(mainInputField.value === "") return;
+        	if(mainInputField.value === "0") return;
+
             var val = eval(mainInputField.value);
             
         	// Set the second history field to the first one 
@@ -216,7 +233,8 @@
         }
 
         deleteBtn.onclick = function() {
-            mainInputField.value = mainInputField.value.substring(0, mainInputField.length - 1);
+            var temp = mainInputField.value.substring(0, mainInputField.value.length - 1);
+            mainInputField.value = temp;
         }
 
 

@@ -71,3 +71,8 @@ html {
 .calc_button:hover {
 	background-color: green;
 }
+
+#equalBtn {
+	width: 130px;
+}
+
