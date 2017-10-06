@@ -1,0 +1,30 @@
+{
+  "name": "OnePlusTwo",
+  "version": "1.0.0",
+  "description": "Calculator accessible through Menu Bar for easy access.",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rahathossan/OnePlusTwo.git"
+  },
+  "scripts": {
+    
+  },
+  "keywords": [
+    "Calculator",
+    "menubar"
+  ],
+  "author": "Rahat Hossan and Adeola Uthman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rahathossan/OnePlusTwo/issues"
+  },
+  "homepage": "https://github.com/rahathossan/OnePlusTwo",
+  "dependencies": {
+    "electron-positioner": "^3.0.0",
+    "extend": "^2.0.0"
+  },
+  "devDependencies": {
+    "standard": "^5.4.1"
+  }
+}

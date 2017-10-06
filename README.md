@@ -1,5 +1,3 @@
 # OnePlusTwo
 
-A calculator that is in the menu bar for easy access.
-By Rahat Hossan and Adeola Uthman
-
+The README for the OnePlusTwo project.
