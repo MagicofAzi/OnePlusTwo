@@ -6,7 +6,7 @@
 
 	<body>
 		<div id='calculator_area'>
-			<input type="text" name="expression_field" size="18">
+			<input type="text" name="expression_field" id="main_expression_field" size="18">
 			<br><br>
 
 			<button class="calc_button" id="oneBtn">1</button>
@@ -19,6 +19,12 @@
 			<button class="calc_button" id="eightBtn">8</button>
 			<button class="calc_button" id="nineBtn">9</button>
 			<button class="calc_button" id="zeroBtn">0</button>
+			<button class="calc_button" id="posNegBtn">+/-</button>
+			<button class="calc_button" id="decPntBtn">.</button>
+			<button class="calc_button" id="addBtn">+</button>
+			<button class="calc_button" id="subBtn">-</button>
+			<button class="calc_button" id="mulBtn">x</button>
+			<button class="calc_button" id="divBtn">/</button>
 		</div>
 
 
@@ -60,6 +66,17 @@
 	</body>
 
 	<script type="text/javascript">
+
+		/********************
+		*					*
+		*	  VARIABLES		*
+		*					*
+		*********************/
+
+		// The main input field.
+		const mainInputField = document.getElementById('main_expression_field');
+
+		// The numbers
 		const oneBtn = document.getElementById('oneBtn');
 		const twoBtn = document.getElementById('twoBtn');
 		const threeBtn = document.getElementById('threeBtn');
@@ -71,8 +88,92 @@
 		const nineBtn = document.getElementById('nineBtn');
 		const zeroBtn = document.getElementById('zeroBtn');
 
+		// The operators and other buttons
+		const positiveNegativeBtn = document.getElementById('posNegBtn');
+		const decimalPointBtn = document.getElementById('decPntBtn');
+		const addBtn = document.getElementById('addBtn');
+		const subtractBtn = document.getElementById('subBtn');
+		const multiplyBtn = document.getElementById('mulBtn');
+		const divideBtn = document.getElementById('divBtn');
+
+
+
+		/********************
+		*					*
+		*	  FUNCTIONS		*
+		*					*
+		*********************/
+
 		oneBtn.onclick = function() {
-			oneBtn.style.backgroundColor = "red";
+			mainInputField.value += "1";
 		}
+
+		twoBtn.onclick = function() {
+			mainInputField.value += "2";
+		}
+
+		threeBtn.onclick = function() {
+			mainInputField.value += "3";
+		}
+
+		fourBtn.onclick = function() {
+			mainInputField.value += "4";
+		}
+
+		fiveBtn.onclick = function() {
+			mainInputField.value += "5";
+		}
+
+		sixBtn.onclick = function() {
+			mainInputField.value += "6";
+		}
+
+		sevenBtn.onclick = function() {
+			mainInputField.value += "7";
+		}
+
+		eightBtn.onclick = function() {
+			mainInputField.value += "8";
+		}
+
+		nineBtn.onclick = function() {
+			mainInputField.value += "9";
+		}
+
+		zeroBtn.onclick = function() {
+			if(mainInputField.value !== "0" && mainInputField.value !== "-0") {
+				mainInputField.value += "0";
+			}
+		}
+
+
+
+		positiveNegativeBtn.onclick = function() {
+
+		}
+
+		decimalPointBtn.onclick = function() {
+
+		}
+
+		addBtn.onclick = function() {
+			
+		}
+
+		subtractBtn.onclick = function() {
+			
+		}
+
+		multiplyBtn.onclick = function() {
+			
+		}
+
+		divideBtn.onclick = function() {
+			
+		}
+
+
+
+
 	</script>
 </html>
