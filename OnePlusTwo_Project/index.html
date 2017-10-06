@@ -41,6 +41,9 @@
 			<button class="calc_button" id="subBtn">-</button>
 			<button class="calc_button" id="mulBtn">x</button>
 			<button class="calc_button" id="divBtn">/</button>
+			<button class="calc_button" id="clearBtn">C</button>
+			<button class="calc_button" id="equalBtn">=</button>
+			<button class="calc_button" id="deleteBtn">Back</button>
 		</div>
 
 
@@ -113,7 +116,9 @@
 		const subtractBtn = document.getElementById('subBtn');
 		const multiplyBtn = document.getElementById('mulBtn');
 		const divideBtn = document.getElementById('divBtn');
-
+        const clearBtn = document.getElementById('clearBtn');
+        const equalBtn = document.getElementById('equalBtn');
+        const deleteBtn = document.getElementById('deleteBtn');
 
 
 		/********************
@@ -199,13 +204,15 @@
         }
 
         equalBtn.onclick = function() {
+            var val = eval(mainInputField.value);
+            
         	// Set the second history field to the first one 
         	history2Field.value = history1Field.value;
 
         	// Set the first history field to the main input.
-        	history1Field.value = mainInputField.value;
+        	history1Field.value = mainInputField.value + "=" + val;
 
-            mainInputField.value += "";
+            mainInputField.value = val;
         }
 
         deleteBtn.onclick = function() {
