@@ -13,7 +13,30 @@ html {
 }
 
 
-/* The main input field for the app. */
+/* The input fields for the app. */
+#history_1_expression_field, #history_2_expression_field {
+	width: 100%;
+	height: 35px;
+	border: none;
+	outline: none;
+	font-size: 25px;
+	background: none;
+	font-weight: 200;
+	text-align: left;
+	font-family: "Avenir";
+	text-decoration: none;
+}
+
+#history_1_expression_field {
+	background-color: maroon;
+}
+
+#history_2_expression_field {
+	background-color: lightyellow;
+}
+
+
+
 #main_expression_field {
 	width: 100%;
 	height: 70px;

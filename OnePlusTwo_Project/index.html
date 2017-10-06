@@ -7,6 +7,18 @@
 	<body>
 		<div id='calculator_area'>
 			<input type="text" 
+					name="history_2_expression_field" 
+					id="history_2_expression_field"
+					readonly="true" 
+					size="16">
+			<br>
+			<input type="text" 
+					name="history_1_expression_field" 
+					id="history_1_expression_field"
+					readonly="true" 
+					size="16">
+			<br>
+			<input type="text" 
 					name="expression_field" 
 					id="main_expression_field"
 					readonly="true" 
@@ -78,6 +90,8 @@
 		*********************/
 
 		// The main input field.
+		const history2Field = document.getElementById('history_2_expression_field');
+		const history1Field = document.getElementById('history_1_expression_field');
 		const mainInputField = document.getElementById('main_expression_field');
 
 		// The numbers
@@ -185,6 +199,12 @@
         }
 
         equalBtn.onclick = function() {
+        	// Set the second history field to the first one 
+        	history2Field.value = history1Field.value;
+
+        	// Set the first history field to the main input.
+        	history1Field.value = mainInputField.value;
+
             mainInputField.value += "";
         }
 
