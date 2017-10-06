@@ -150,33 +150,47 @@
 			}
 		}
 
-
-
 		positiveNegativeBtn.onclick = function() {
-
+            if(mainInputField.value.substring(0,1) == "-") {
+                mainInputField.value = mainInputField.value.substring( 1, mainInputField.length);
+            };
+            else if(mainInputField.value.substring(0,0) != "-") {
+                mainInputField.value = "-" + mainInputField.value;
+            };
+            
 		}
 
 		decimalPointBtn.onclick = function() {
-
+            mainInputField.value += ".";
 		}
 
 		addBtn.onclick = function() {
-			
+			mainInputField.value += "+";
 		}
 
 		subtractBtn.onclick = function() {
-			
+			mainInputField.value += "-";
 		}
 
 		multiplyBtn.onclick = function() {
-			
+			mainInputField.value += "x";
 		}
 
 		divideBtn.onclick = function() {
-			
+			mainInputField.value += "/";
 		}
+        
+        clearBtn.onclick = function() {
+            mainInputField.value = "0";
+        }
 
+        equalBtn.onclick = function() {
+            mainInputField.value += "";
+        }
 
+        deleteBtn.onclick = function() {
+            mainInputField.value = mainInputField.value.substring(0, mainInputField.length - 1) "";
+        }
 
 
 	</script>
