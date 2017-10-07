@@ -1,7 +1,6 @@
 html {
 	text-align: center;
 	overflow: hidden;
-	background-color: lightgray;
 }
 
 #calculator_area {
@@ -19,23 +18,22 @@ html {
 	height: 35px;
 	border: none;
 	outline: none;
-	font-size: 25px;
+	font-size: 18px;
 	background: none;
 	font-weight: 200;
 	text-align: left;
+	color: rgba(158, 158, 158, 1);
 	font-family: "Avenir";
 	text-decoration: none;
 }
 
 #history_1_expression_field {
-	background-color: maroon;
+	background-color: white;
 }
 
 #history_2_expression_field {
-	background-color: lightyellow;
+	background-color: white;
 }
-
-
 
 #main_expression_field {
 	width: 100%;
@@ -54,13 +52,15 @@ html {
 
 /* All of the calculator buttons, including 0-9, +, -, etc. */
 .calc_button {
-	width: 65px;
-	height: 65px;
+	width: 62px;
+	height: 62px;
 	color: white;
 	border: none;
 	outline: none;
 	font-size: 18px;
 	background: none;
+	margin-top: 10px;
+	margin-right: 2px;
 	margin-bottom: 5px;
 	border-radius: 20px;
 	font-family: "Avenir";
@@ -74,5 +74,16 @@ html {
 
 #equalBtn {
 	width: 130px;
+}
+
+
+/* Backgrounds. */
+#calc_buttons_area {
+	position: relative;
+	top: -25px;
+	height: 520;
+	z-index: 100;
+	border-radius: 15px;
+	background-color: lightgray;
 }
 
