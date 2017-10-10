@@ -4,7 +4,7 @@
 		<link rel="stylesheet" type="text/css" href="./main.css">
 	</head>
 
-	<body>
+	<body id='body'>
 		<div id='calculator_area'>
 			<input type="text" 
 					name="history_2_expression_field" 
@@ -129,6 +129,17 @@
 		*	  FUNCTIONS		*
 		*					*
 		*********************/
+
+		document.getElementById('body').onkeypress = (e) => {
+			if(e.metakey || e.ctrlKey) {
+				if(e.keyCode === 67) {
+					mainInputField.select();
+					document.execCommand('copy', false);
+				} else if(e.keyCode === 86) {
+					document.execCommand('paste', false);
+				}
+			}
+		}
 
 		function checkZero() {
 			if(mainInputField.value === "0") return true;
