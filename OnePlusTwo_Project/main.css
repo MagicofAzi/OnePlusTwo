@@ -3,12 +3,18 @@ html {
 	overflow: hidden;
 }
 
+html, body {
+	user-select: none;
+	/*background-color: rgba(255,255,255,0);*/
+}
+
 #calculator_area {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
+	user-select: none;
 }
 
 
@@ -22,18 +28,13 @@ html {
 	background: none;
 	font-weight: 200;
 	text-align: left;
-	color: rgba(158, 158, 158, 1);
+	user-select: none;
 	font-family: "Avenir";
 	text-decoration: none;
+	color: rgba(128, 128, 128, 1);
+	background-color: rgba(255,255,255,0.85);
 }
 
-#history_1_expression_field {
-	background-color: white;
-}
-
-#history_2_expression_field {
-	background-color: white;
-}
 
 #main_expression_field {
 	width: 100%;
@@ -44,45 +45,63 @@ html {
 	background: none;
 	font-weight: 200;
 	text-align: right;
+	user-select: none;
 	font-family: "Avenir";
 	text-decoration: none;
-	background-color: white;
+	background-color: rgba(255,255,255,0.85);
 }
 
 
 /* All of the calculator buttons, including 0-9, +, -, etc. */
 .calc_button {
-	width: 55px;
-	height: 55px;
+	width: 65px;
+	height: 65px;
 	color: white;
 	border: none;
 	outline: none;
 	font-size: 22px;
 	background: none;
-	margin-top: 4px;
+	user-select: none;
+	
+	/*margin-top: 1px;*/
+	/*margin-right: 1px;*/
+
+	/*float: left;*/
+	/*margin-right: 2px;
+	margin-bottom: 5px;
+	border-radius: 20px;*/
+	/*margin-top: 4px;
 	margin-right: 4px;
 	margin-bottom: 4px;
-	border-radius: 10px;
+	border-radius: 10px;*/
 	font-family: "Avenir";
 	text-decoration: none;
+<<<<<<< HEAD
+=======
+	background: rgba(0,0,0,1);
+>>>>>>> 61cde45c3f7bd76b106b3d95ea7db44fcf4e9cfd
 	transition-duration: 0.2s;
 }
 .calc_button:hover {
-	background-color: green;
+	background-color: rgba(0,0,0,0.5);
 }
 
 #equalBtn {
-	width: 118px;
+	width: 130px;
 }
 
 
 /* Backgrounds. */
 #calc_buttons_area {
 	position: relative;
-	top: -25px;
+	top: -32px;
 	height: 520;
 	z-index: 100;
+	user-select: none;
+	text-align: center;
 	border-radius: 15px;
-	background-color: #E0E0E0;
+	/*background-color: #6125C8;*/
+	/*background-color: #E0E0E0;*/
+	background-color: red;
 }
 
