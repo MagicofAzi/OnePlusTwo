@@ -3,12 +3,18 @@ html {
 	overflow: hidden;
 }
 
+html, body {
+	user-select: none;
+	/*background-color: rgba(255,255,255,0);*/
+}
+
 #calculator_area {
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
 	bottom: 0px;
+	user-select: none;
 }
 
 
@@ -22,18 +28,13 @@ html {
 	background: none;
 	font-weight: 200;
 	text-align: left;
-	color: rgba(158, 158, 158, 1);
+	user-select: none;
 	font-family: "Avenir";
 	text-decoration: none;
+	color: rgba(128, 128, 128, 1);
+	background-color: rgba(255,255,255,0.85);
 }
 
-#history_1_expression_field {
-	background-color: white;
-}
-
-#history_2_expression_field {
-	background-color: white;
-}
 
 #main_expression_field {
 	width: 100%;
@@ -44,9 +45,10 @@ html {
 	background: none;
 	font-weight: 200;
 	text-align: right;
+	user-select: none;
 	font-family: "Avenir";
 	text-decoration: none;
-	background-color: white;
+	background-color: rgba(255,255,255,0.85);
 }
 
 
@@ -60,6 +62,7 @@ html {
 	font-size: 18px;
 	background: none;
 	margin-top: 10px;
+	user-select: none;
 	margin-right: 2px;
 	margin-bottom: 5px;
 	border-radius: 20px;
@@ -80,10 +83,11 @@ html {
 /* Backgrounds. */
 #calc_buttons_area {
 	position: relative;
-	top: -25px;
+	top: -32px;
 	height: 520;
 	z-index: 100;
+	user-select: none;
 	border-radius: 15px;
-	background-color: lightgray;
+	background-color: #6125C8;
 }
 

@@ -4,7 +4,9 @@ var Menu = require('electron').Menu;
 var mb = menubar({
 	width: 300,
 	height: 520,
-	tooltip: "1+2"
+	tooltip: "1+2",
+	resizable: false,
+	transparent: true,
 });
 
 mb.on('ready', function ready () {
