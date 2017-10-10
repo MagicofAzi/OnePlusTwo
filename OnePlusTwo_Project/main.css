@@ -54,18 +54,25 @@ html, body {
 
 /* All of the calculator buttons, including 0-9, +, -, etc. */
 .calc_button {
-	width: 62px;
-	height: 62px;
+	width: 55px;
+	height: 55px;
 	color: white;
 	border: none;
 	outline: none;
-	font-size: 18px;
+	font-size: 22px;
 	background: none;
+<<<<<<< HEAD
 	margin-top: 10px;
 	user-select: none;
 	margin-right: 2px;
 	margin-bottom: 5px;
 	border-radius: 20px;
+=======
+	margin-top: 4px;
+	margin-right: 4px;
+	margin-bottom: 4px;
+	border-radius: 10px;
+>>>>>>> 9ce228a29ddb7c6ee07d695753653cb36654c67d
 	font-family: "Avenir";
 	text-decoration: none;
 	background: lightgreen;
@@ -76,7 +83,7 @@ html, body {
 }
 
 #equalBtn {
-	width: 130px;
+	width: 118px;
 }
 
 
@@ -88,6 +95,14 @@ html, body {
 	z-index: 100;
 	user-select: none;
 	border-radius: 15px;
+<<<<<<< HEAD
 	background-color: #6125C8;
+=======
+	background-color: #E0E0E0;
+}
+#buffer{
+    height: 4px; 
+    width: 100%;
+>>>>>>> 9ce228a29ddb7c6ee07d695753653cb36654c67d
 }
 
