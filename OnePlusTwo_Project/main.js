@@ -2,8 +2,8 @@ var menubar = require('menubar');
 var Menu = require('electron').Menu;
 
 var mb = menubar({
-	width: 300,
-	height: 520,
+	width: 250,
+	height: 400,
 	tooltip: "1+2",
 	resizable: false,
 	transparent: true,

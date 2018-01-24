@@ -6,85 +6,54 @@
 
 	<body id='body'>
 		<div id='calculator_area'>
-			<input type="text" 
-					name="history_2_expression_field" 
+			<div id='title'>
+				ONE<span style="color:#D84464; font-weight: 200;">PLUS</span>TWO
+			</div>
+			<input type="text"
+					name="history_2_expression_field"
 					id="history_2_expression_field"
-					readonly="true" 
+					readonly="true"
 					size="16">
 			<br>
-			<input type="text" 
-					name="history_1_expression_field" 
+			<input type="text"
+					name="history_1_expression_field"
 					id="history_1_expression_field"
-					readonly="true" 
+					readonly="true"
 					size="16">
 			<br>
-			<input type="text" 
-					name="expression_field" 
+			<input type="text"
+					name="expression_field"
 					id="main_expression_field"
-					readonly="true" 
+					readonly="true"
 					size="18">
 			<br><br>
 
 			<div id="calc_buttons_area">
 			    <br>
-				<button class="calc_button" id="oneBtn">1</button>
-				<button class="calc_button" id="twoBtn">2</button>
-				<button class="calc_button" id="threeBtn">3</button>
-				<button class="calc_button" id="fourBtn">4</button>
-				<button class="calc_button" id="fiveBtn">5</button>
-				<button class="calc_button" id="sixBtn">6</button>
-				<button class="calc_button" id="sevenBtn">7</button>
-				<button class="calc_button" id="eightBtn">8</button>
-				<button class="calc_button" id="nineBtn">9</button>
-				<button class="calc_button" id="zeroBtn">0</button>
-				<button class="calc_button" id="posNegBtn">+/-</button>
-				<button class="calc_button" id="decPntBtn">.</button>
-				<button class="calc_button" id="addBtn">+</button>
-				<button class="calc_button" id="subBtn">-</button>
-				<button class="calc_button" id="mulBtn">x</button>
-				<button class="calc_button" id="divBtn">/</button>
-				<button class="calc_button" id="clearBtn">C</button>
-				<button class="calc_button" id="equalBtn">=</button>
-				<button class="calc_button" id="deleteBtn">Back</button>
+			    <button class="calc_button" id="clearBtn">AC</button>
+			    <button class="calc_button" id="percentBtn">%</button>
+			    <button class="calc_button" id="deleteBtn">CE</button>
+					<button class="calc_button" id="sevenBtn">7</button>
+					<button class="calc_button" id="eightBtn">8</button>
+					<button class="calc_button" id="nineBtn">9</button>
+          <button class="calc_button" id="fourBtn">4</button>
+					<button class="calc_button" id="fiveBtn">5</button>
+					<button class="calc_button" id="sixBtn">6</button>
+          <button class="calc_button" id="oneBtn">1</button>
+					<button class="calc_button" id="twoBtn">2</button>
+					<button class="calc_button" id="threeBtn">3</button>
+					<button class="calc_button" id="posNegBtn">+/-</button>
+					<button class="calc_button" id="zeroBtn">0</button>
+					<button class="calc_button" id="decPntBtn">.</button>
+			</div>
+			<div id="computation_area">
+					<button class="comp_button" id="divBtn">/</button>
+					<button class="comp_button" id="mulBtn">x</button>
+					<button class="comp_button" id="subBtn">-</button>
+					<button class="comp_button" id="addBtn">+</button>
+					<button class="comp_button" id="equalBtn">=</button>
 			</div>
 		</div>
-
-
-
-		<!-- <FORM NAME="Calc">
-			<TABLE BORDER=4>
-			<TR>
-			<TD>
-			<INPUT TYPE="text"   NAME="Input" Size="16">
-			<br>
-			</TD>
-			</TR>
-			<TR>
-			<TD>
-			<INPUT TYPE="button" NAME="one"   VALUE="  1  " OnClick="Calc.Input.value += '1'">
-			<INPUT TYPE="button" NAME="two"   VALUE="  2  " OnCLick="Calc.Input.value += '2'">
-			<INPUT TYPE="button" NAME="three" VALUE="  3  " OnClick="Calc.Input.value += '3'">
-			<INPUT TYPE="button" NAME="plus"  VALUE="  +  " OnClick="Calc.Input.value += ' + '">
-			<br>
-			<INPUT TYPE="button" NAME="four"  VALUE="  4  " OnClick="Calc.Input.value += '4'">
-			<INPUT TYPE="button" NAME="five"  VALUE="  5  " OnCLick="Calc.Input.value += '5'">
-			<INPUT TYPE="button" NAME="six"   VALUE="  6  " OnClick="Calc.Input.value += '6'">
-			<INPUT TYPE="button" NAME="minus" VALUE="  -  " OnClick="Calc.Input.value += ' - '">
-			<br>
-			<INPUT TYPE="button" NAME="seven" VALUE="  7  " OnClick="Calc.Input.value += '7'">
-			<INPUT TYPE="button" NAME="eight" VALUE="  8  " OnCLick="Calc.Input.value += '8'">
-			<INPUT TYPE="button" NAME="nine"  VALUE="  9  " OnClick="Calc.Input.value += '9'">
-			<INPUT TYPE="button" NAME="times" VALUE="  x  " OnClick="Calc.Input.value += ' * '">
-			<br>
-			<INPUT TYPE="button" NAME="clear" VALUE="  c  " OnClick="Calc.Input.value = ''">
-			<INPUT TYPE="button" NAME="zero"  VALUE="  0  " OnClick="Calc.Input.value += '0'">
-			<INPUT TYPE="button" NAME="DoIt"  VALUE="  =  " OnClick="Calc.Input.value = eval(Calc.Input.value)">
-			<INPUT TYPE="button" NAME="div"   VALUE="  /  " OnClick="Calc.Input.value += ' / '">
-			<br>
-			</TD>
-			</TR>
-			</TABLE>
-		</FORM> -->
 	</body>
 
 	<script type="text/javascript">
@@ -119,9 +88,10 @@
 		const subtractBtn = document.getElementById('subBtn');
 		const multiplyBtn = document.getElementById('mulBtn');
 		const divideBtn = document.getElementById('divBtn');
-        const clearBtn = document.getElementById('clearBtn');
-        const equalBtn = document.getElementById('equalBtn');
-        const deleteBtn = document.getElementById('deleteBtn');
+    const clearBtn = document.getElementById('clearBtn');
+    const equalBtn = document.getElementById('equalBtn');
+    const deleteBtn = document.getElementById('deleteBtn');
+		const percentBtn = document.getElementById('percentBtn');
 
 
 		/********************
@@ -204,7 +174,7 @@
             else if(mainInputField.value.substring(0,0) != "-") {
                 mainInputField.value = "-" + mainInputField.value;
             }
-            
+
 		}
 
 		decimalPointBtn.onclick = function() {
@@ -226,9 +196,9 @@
 		divideBtn.onclick = function() {
 			mainInputField.value += "/";
 		}
-        
+
         clearBtn.onclick = function() {
-            mainInputField.value = "0";
+            mainInputField.value = "";
         }
 
         equalBtn.onclick = function() {
@@ -236,8 +206,8 @@
         	if(mainInputField.value === "0") return;
 
             var val = eval(mainInputField.value);
-            
-        	// Set the second history field to the first one 
+
+        	// Set the second history field to the first one
         	history2Field.value = history1Field.value;
 
         	// Set the first history field to the main input.
@@ -251,6 +221,9 @@
             mainInputField.value = temp;
         }
 
+				percentBtn.onclick = function() {
+					mainInputField.value += "%";
+				}
 
 	</script>
 </html>
